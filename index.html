@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="black">
+        <div class="container">
+            <section class="quiz-section">
+
+                <div class="quiz-box">
+                    <h1>Multiple Choice Questions</h1>
+
+                    <div class="quiz-header">
+                        <span>Choose the best answer</span>
+                        <span class="header-score"></span>
+                    </div>
+
+                    <h2 class="question-text"></h2>
+                    <div class="option-list"></div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total"></span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+                <div class="result-container">
+                <div class="result-box">
+                    <h2>Quiz Result</h2>
+                    <div class="percentage-container">
+
+                        <div class="circular-progress">
+                            <span class="progress-value"></span>
+                        </div>
+
+                        <span class="score-text"></span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Try Again</button>
+                        <button class="goHome-btn" >Go To Home</button>
+                    </div>
+                </div>
+
+                 <!-- Add a container for the GIF -->
+                 <div class="gif-container">
+                    <img src="" alt="GIF" class="gif" style="display: none;">
+                </div>
+            </div>
+
+            </section>
+
+            <div class="home" id="home">
+                <div class="content">
+                  <img src="img/home.png" alt="home" class="home-image">
+                  <p class="outside">Quiz<a class="quiz" href="#" id="style-2" data-replace="App"><span>App</span></a></p>
+                  <p>Test your knowledge and discover how much of an expert you are.<br>Are you ready to get started?</p>
+                  <a href="#" class="btn">START</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup-info">
+        <h2>Instructions</h2>
+        <span class="info"><div class="number">1.</div>Each question consists of 4 options.</span>
+        <span class="info"><div class="number">2.</div>You can proceed to the next question only after answering one.</span>
+        <span class="info"><div class="number">3.</div>Once you select your answer, it cannot be undone.</span>
+        <span class="info"><div class="number">4.</div>Each right answer will provide an increment of 1 in your scoreboard.</span>
+        <span class="info"><div class="number">5.</div>You can't exit from the Quiz while you're playing.</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
